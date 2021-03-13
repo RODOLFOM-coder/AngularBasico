@@ -1,2 +1,12 @@
-<H1 class="alert alert-danger">MINHA PAGINA INICIAL</H1>
-<button class="btn btn-primary">teste</button>
+<div class="container">
+ <p class="alert alert-danger">Seja bem vindo {{nome}}</p>
+ <p class="alert alert-primary">Projeto {{title}}</p>
+
+    <table class="table">
+        <tr *ngFor="let o of vetor, let i=index">
+            <td>{{i}}</td>
+            <td>{{o}}</td>
+        </tr>
+    </table>
+
+</div>              
